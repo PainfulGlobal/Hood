@@ -8,7 +8,7 @@
 --]]
 _G.SAEnabled = true
 
-local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/IYKYK.lua"))()
+local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulGlobal/Hood/main/IYKYK.lua"))()
 
 local L_2_ = L_1_:AddWindow("Global X", {
 	main_color = Color3.fromRGB(10, 10, 10),
@@ -17,7 +17,7 @@ local L_2_ = L_1_:AddWindow("Global X", {
 	can_resize = true,
 })
 
-local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/So.lua"))()
+local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulGlobal/Hood/main/So.lua"))()
 -- // Mains
 local UserInputService = game:GetService("UserInputService")
 
@@ -361,13 +361,13 @@ L_7_:BindToRenderStep("AimLock", 0, function()
 end)
 -- // Mains
 game:GetService("UserInputService").InputBegan:connect(function(input)
-if input.KeyCode == Enum.KeyCode.V then
+if input.KeyCode == Enum.KeyCode.Insert then
 _G.SAEnabled = true
 end
 end)
 --
 game:GetService("UserInputService").InputBegan:connect(function(input)
-if input.KeyCode == Enum.KeyCode.C then
+if input.KeyCode == Enum.KeyCode.Delete then
 _G.SAEnabled = false
 end
 end)
